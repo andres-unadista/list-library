@@ -1,6 +1,6 @@
 import { Writer } from '../models/writer.model';
 
-export const ESCRITORES: Writer[] = [
+export const WRITERS: Writer[] = [
     {
         id: 1,
         nombre: 'Juan',

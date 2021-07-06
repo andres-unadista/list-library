@@ -1,6 +1,6 @@
 import { Book } from '../models/book.model';
 
-export const LIBROS: Book[] = [
+export const BOOKS: Book[] = [
     {
         id: 1,
         titulo: 'Cicatriz',
