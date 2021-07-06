@@ -1,1 +1,16 @@
-<p>list-writer works!</p>
+<select name="country" (change)="onChangeList($event)">
+  <option value="todos">Todos</option>
+  <option value="españa">España</option>
+  <option value="canadá">Canadá</option>
+  <option value="reino unido">Reino Unido</option>
+  <option value="chile">Chile</option>
+</select>
+<div class="writers">
+  <div class="writer" *ngFor="let writer of writers">
+    <img [src]="writer.imagen" [alt]="writer.nombre" />
+    <h1>{{ writer.nombre }} {{ writer.apellidos }}</h1>
+    <p>
+      {{ writer.pais | titlecase }}
+    </p>
+  </div>
+</div>

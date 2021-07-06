@@ -1,0 +1,23 @@
+.writers{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.writer{
+  padding: 1em;
+  justify-content: center;
+  width: 250px;
+  margin: 10px;
+  border: 1px solid grey;
+  border-radius: 1em;
+}
+
+.writers img{
+  width: 100%;
+}
+
+select{
+  padding: 5px;
+  
+}
