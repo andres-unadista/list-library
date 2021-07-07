@@ -24,4 +24,12 @@ export class WriterService {
     });
     return from(listWriters);
   }
+
+  getOneWriter(id: number): Promise<Writer> {
+    const promise: Promise<Writer> = new Promise((resolve, reject) => {
+      const writer:Writer = WRITERS.find((writer) => writer.id === id)!;
+      resolve(writer);
+    });
+    return promise;
+  }
 }

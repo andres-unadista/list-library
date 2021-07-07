@@ -1,0 +1,12 @@
+.writer{
+  padding: 1em;
+  justify-content: center;
+  width: 250px;
+  margin: 10px;
+  border: 1px solid grey;
+  border-radius: 1em;
+}
+
+.writer img{
+  width: 100%;
+}
