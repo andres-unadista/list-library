@@ -5,6 +5,7 @@ import { WriterRoutingModule } from './writer-routing.module';
 import { ListWriterComponent } from './list-writer/list-writer.component';
 import { DetailWriterComponent } from './detail-writer/detail-writer.component';
 import { ItemWriterComponent } from './item-writer/item-writer.component';
+import { BookModule } from '../book/book.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ItemWriterComponent } from './item-writer/item-writer.component';
   ],
   imports: [
     CommonModule,
-    WriterRoutingModule
+    WriterRoutingModule,
+    BookModule
   ]
 })
 export class WriterModule { }

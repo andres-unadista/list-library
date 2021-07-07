@@ -6,5 +6,5 @@
   <option value="chile">Chile</option>
 </select>
 <div class="writers">
-  <app-item-writer *ngFor="let writer of writers" [writer]="writer" [routerLink]="['/escritor', writer.id]"></app-item-writer>
+  <app-item-writer *ngFor="let writer of writers" [writer]="writer" [routerLink]="['/escritor', writer.id, 'book']"></app-item-writer>
 </div>

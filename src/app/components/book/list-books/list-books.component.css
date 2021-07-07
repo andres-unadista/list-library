@@ -1,0 +1,18 @@
+.books{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book{
+  width: 150px;
+  margin: 10px;
+  border: 1px solid grey;
+}
+
+.book img{
+  width: 100%;
+}
+
+.book .content{
+  padding: 10px 20px;
+}

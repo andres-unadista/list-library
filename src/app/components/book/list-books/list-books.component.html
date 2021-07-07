@@ -1,0 +1,13 @@
+<div class="books" *ngIf="books.length > 0; else emptyBooks">
+  <div class="book" *ngFor="let book of books">
+    <img [src]="book.imagen" [alt]="book.titulo" />
+    <div class="content">
+      <p>
+        <b>{{ book.titulo }}</b> de {{ book.publicado }}
+      </p>
+    </div>
+  </div>
+</div>
+<ng-template #emptyBooks>
+  <p>Sin libros</p>
+</ng-template>
