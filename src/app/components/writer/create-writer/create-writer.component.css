@@ -1,0 +1,11 @@
+.text-error{
+  color: tomato;
+}
+
+select.ng-touched.ng-invalid, input.ng-touched.ng-invalid{
+  border: 1px solid rgb(207, 27, 27);
+}
+
+select.ng-touched.ng-valid, input.ng-touched.ng-valid{
+  border: 1px solid rgb(19, 148, 19);
+}
