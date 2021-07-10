@@ -1,6 +1,7 @@
 {
-  "Argentine peso" : "Peso argentino",
-  "United States Dollar" : "Dólar",
-  "United States dollar" : "Dólar",
-  "East Caribbean dollar" : "Dólar del Caribe Oriental"
+  "Argentine peso": "Peso argentino",
+  "United States Dollar": "Dólar",
+  "United States dollar": "Dólar",
+  "East Caribbean dollar": "Dólar del Caribe Oriental",
+  "unknown": "Desconocido"
 }

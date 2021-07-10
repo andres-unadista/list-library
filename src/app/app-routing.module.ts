@@ -14,6 +14,13 @@ const routes: Routes = [
         (m) => m.CountriesModule
       ),
   },
+  {
+    path: 'character',
+    loadChildren: () =>
+      import('./components/character/character.module').then(
+        (m) => m.CharacterModule
+      ),
+  },
   { path: '**', pathMatch: 'full', redirectTo: '/escritor' },
 ];
 

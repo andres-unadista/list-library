@@ -1,0 +1,36 @@
+<div class="container" *ngIf="!isLoad; else spinner">
+  <div class="row py-4">
+    <div class="col-md-12">
+      <h2 class="text-center">Rick and Morty</h2>
+      <div class="info">
+        <h4>
+          Cantidad páginas: {{characters.info?.pages}}
+        </h4>
+        <button class="btn btn-primary" (click)="changePage(characters.info.prev)" [disabled]="!characters.info.prev">Anterior</button>
+        <button class="btn btn-primary mx-1" (click)="changePage(characters.info.next)" [disabled]="!characters.info.next">Siguiente</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="characters">
+        <div class="character" *ngFor="let character of characters.results">
+          <img [src]="character.image" [alt]="character.name">
+          <div class="content">
+            <ul>
+              <li>
+                Nombre: {{character.name}}
+              </li>
+              <li>
+                Planeta: {{character.origin.name | translate}}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #spinner>
+  <app-load></app-load>
+</ng-template>
