@@ -6,6 +6,7 @@
         <h4>
           Cantidad páginas: {{characters.info?.pages}}
         </h4>
+        <span class="d-block">Página actual: {{getCurrentPage(characters.info.prev)}}</span>
         <button class="btn btn-primary" (click)="changePage(characters.info.prev)" [disabled]="!characters.info.prev">Anterior</button>
         <button class="btn btn-primary mx-1" (click)="changePage(characters.info.next)" [disabled]="!characters.info.next">Siguiente</button>
       </div>

@@ -41,4 +41,13 @@ export class ListCharacterComponent implements OnInit {
       this.getCharacters(urlPage);
     }
   }
+
+  getCurrentPage(prevPage?: string) {
+    let numberPage = 1;
+    if (prevPage) {
+      const indexPage = prevPage.indexOf('=') + 1;
+      numberPage = parseInt(prevPage.substr(indexPage, 1)) + 1;
+    }
+    return numberPage;
+  }
 }
