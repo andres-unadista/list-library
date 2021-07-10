@@ -1,0 +1,15 @@
+<div class="countries">
+  <div class="country" *ngFor="let country of countries">
+    <img [src]="country.flag" [alt]="country.translations.es">
+    <div class="content">
+      <h3>
+        {{country.translations.es}}
+      </h3>
+      <ul>
+        <li>Capital: {{country.capital}}</li>
+        <li>Población: {{country.population | number}}</li>
+        <li>Moneda: {{country.currencies[0].name! | translate}}</li>
+      </ul>
+    </div>
+  </div>
+</div>

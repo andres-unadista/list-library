@@ -7,6 +7,13 @@ const routes: Routes = [
     loadChildren: () =>
       import('./components/writer/writer.module').then((m) => m.WriterModule),
   },
+  {
+    path: 'paises',
+    loadChildren: () =>
+      import('./components/countries/countries.module').then(
+        (m) => m.CountriesModule
+      ),
+  },
   { path: '**', pathMatch: 'full', redirectTo: '/escritor' },
 ];
 

@@ -1,0 +1,22 @@
+.countries{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.country{
+  width: 300px;
+  margin: 10px;
+  background-color: rgb(35 75 107);
+  color: white;
+}
+
+.country img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.country .content{
+  padding: 10px;
+}

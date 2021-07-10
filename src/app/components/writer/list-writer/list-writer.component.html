@@ -1,12 +1,19 @@
-<div class="div d-flex justify-content-between p-2">
-  <select name="country" (change)="onChangeList($event)">
-    <option value="todos">Todos</option>
-    <option value="españa">España</option>
-    <option value="canadá">Canadá</option>
-    <option value="reino unido">Reino Unido</option>
-    <option value="chile">Chile</option>
-  </select>
-  <a [routerLink]="['/escritor', 'crear']" class="btn btn-primary">Añadir escritor</a>
+<div class="row">
+  <div class="col-md-10 mx-auto">
+    <div class="div d-flex justify-content-between p-2">
+      <select name="country" (change)="onChangeList($event)">
+        <option value="todos">Todos</option>
+        <option value="españa">España</option>
+        <option value="canadá">Canadá</option>
+        <option value="reino unido">Reino Unido</option>
+        <option value="chile">Chile</option>
+      </select>
+      <div>
+        <a [routerLink]="['/escritor', 'crear']" class="btn btn-primary mr-1">Añadir escritor</a>
+        <a [routerLink]="['/paises']" class="btn btn-info">País</a>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="writers">
   <app-item-writer *ngFor="let writer of writers" [writer]="writer" [routerLink]="['/escritor', writer.id, 'book']"></app-item-writer>
